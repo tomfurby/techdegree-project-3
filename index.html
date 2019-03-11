@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Online Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>The Code Review</h1>
+    </header>
+    <div class="wrapper">
+        <div class="container header-text">
+            <h2 class="item-header">Signup for our newsletter</h2>
+            <p>Get the latest on how your code is doing right in your inbox
+            </p>
+        </div>
+
+
+        <form>
+            <div class="container contact">
+                <fieldset>
+                    <legend><h3>Contact Information</h3></legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="required">
+                    
+                    <label for="name">Email Address</label>
+                    <input type="email" id="email" name="user_email" placeholder="required">
+                    
+                    <label for="name">Phone Number</label>
+                    <input type="tel" id="phone" name="user_number" placeholder="">
+                    
+                    <label for="name">Street Address</label>
+                    <input type="text" id="address" name="user_address" placeholder="">
+                    
+                    <label for="name">City</label>
+                    <input type="text" id="city" name="user_city" placeholder="">
+                    
+                    <label for="name">State</label>
+                    <select type>
+                            <option value="choose">Choose State</option>
+                            <option value="ACT">ACT</option>
+                            <option value="NSW">NSW</option>
+                            <option value="NT">NT</option>
+                            <option value="QLD">QLD</option>
+                            <option value="VIC">VIC</option>
+                            <option value="WA">WA</option>
+                        </select><br>			
+
+                    <label for="name">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip" placeholder="required">
+                </fieldset>
+
+            </div>
+            <div class="container newsletter">
+                <fieldset>
+                    <legend><h3>Newsletter</h3></legend>
+
+                    <label>Select the newsletters you would like to receive</label>
+
+                    
+                    <input type="checkbox" id="html" name="newsletter" value="HTML_news"><label for="html">HTML News</label><br>
+
+                    <input type="checkbox" id="css" name="newsletter" value="CSS_news"><label for="css">CSS News</label><br>
+                    
+                    <input type="checkbox" id="javascript" name="newsletter" value="Javascript_news"><label for="javascript">Javascript News</label><br>
+                    
+                    <label>Newsletter format</label><br>
+                    <input type="radio" id="html_format" name="news_radio"><label for="html_format">HTML</label><br>
+                    <input type="radio" id="plain_text" name="news_radio"><label for="plain_text">Plain Text</label><br>
+
+                    <label for="topics">Other topics you'd like to hear about</label>
+
+                    <textarea id="topics" name="user_topics"></textarea>
+
+                    <input type="button" id="sign_up" name="user_signup" value="Sign Up">
+                </fieldset> 
+            </div>
+        </form>
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+    </div>  
+</body>
+</html>
