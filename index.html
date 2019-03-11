@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,24 +23,24 @@
         <form>
             <div class="container contact">
                 <fieldset>
-                    <legend><h3>Contact Information</h3></legend>
+                    <legend>Contact Information</legend>
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user_name" placeholder="required">
+                    <input required type="text" id="name" name="user_name" placeholder="required">
                     
-                    <label for="name">Email Address</label>
-                    <input type="email" id="email" name="user_email" placeholder="required">
+                    <label for="email">Email Address</label>
+                    <input required type="email" id="email" name="user_email" placeholder="required">
                     
-                    <label for="name">Phone Number</label>
-                    <input type="tel" id="phone" name="user_number" placeholder="">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_number" placeholder="optional">
                     
-                    <label for="name">Street Address</label>
-                    <input type="text" id="address" name="user_address" placeholder="">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address" placeholder="optional">
                     
-                    <label for="name">City</label>
-                    <input type="text" id="city" name="user_city" placeholder="">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city" placeholder="optional">
                     
-                    <label for="name">State</label>
-                    <select type>
+                    <label for="state">State</label>
+                    <select id="state">
                             <option value="choose">Choose State</option>
                             <option value="ACT">ACT</option>
                             <option value="NSW">NSW</option>
@@ -50,16 +50,16 @@
                             <option value="WA">WA</option>
                         </select><br>			
 
-                    <label for="name">Zip Code</label>
-                    <input type="text" id="zip" name="user_zip" placeholder="required">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip" placeholder="optional">
                 </fieldset>
 
             </div>
             <div class="container newsletter">
                 <fieldset>
-                    <legend><h3>Newsletter</h3></legend>
+                    <legend>Newsletter</legend>
 
-                    <label>Select the newsletters you would like to receive</label>
+                    <p>Select the newsletters you would like to receive</p><br>
 
                     
                     <input type="checkbox" id="html" name="newsletter" value="HTML_news"><label for="html">HTML News</label><br>
@@ -76,7 +76,7 @@
 
                     <textarea id="topics" name="user_topics"></textarea>
 
-                    <input type="button" id="sign_up" name="user_signup" value="Sign Up">
+                    <input type="submit" id="sign_up" name="user_signup" value="Sign Up">
                 </fieldset> 
             </div>
         </form>
